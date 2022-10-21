@@ -1,0 +1,29 @@
+﻿<Window x:Class="PedraPapelTesoura.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PedraPapelTesoura"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Image x:Name="imgTesoura" HorizontalAlignment="Left" Height="150" Margin="82,0,0,0" VerticalAlignment="Center" Width="150" Source="/scissor.png"/>
+        <Image x:Name="imgPedra" HorizontalAlignment="Left" Height="150" Margin="82,0,0,0" VerticalAlignment="Center" Width="150" Source="/stone.png"/>
+        <Image x:Name="imgPapel" HorizontalAlignment="Left" Height="150" Margin="82,0,0,0" VerticalAlignment="Center" Width="150" Source="/note.png"/>
+        <Image x:Name="imgTesoura_Copy" HorizontalAlignment="Left" Height="150" Margin="554,0,0,0" VerticalAlignment="Center" Width="150" Source="/scissor.png"/>
+        <Image x:Name="imgPedra_Copy" HorizontalAlignment="Left" Height="150" Margin="554,0,0,0" VerticalAlignment="Center" Width="150" Source="/stone.png"/>
+        <Image x:Name="imgPapel_Copy" HorizontalAlignment="Left" Height="150" Margin="554,0,0,0" VerticalAlignment="Center" Width="150" Source="/note.png"/>
+        <Button x:Name="btnPapel" Content="Papel" HorizontalAlignment="Center" VerticalAlignment="Center" Height="38" Width="74" Background="#FF72DE62" Foreground="White" FontWeight="Bold" Margin="-153,0,0,0" Click="escolhePapel"/>
+        <Button x:Name="btnPedra" Content="Pedra" HorizontalAlignment="Center" VerticalAlignment="Top" Height="38" Width="74" Background="#FF44BAD0" Foreground="White" FontWeight="Bold" Click="escolhePedra" Margin="0,155,0,0"/>
+        <Button x:Name="btnTesoura" Content="Tesoura" HorizontalAlignment="Center" VerticalAlignment="Center" Height="38" Width="74" Background="#FFC82D1D" Foreground="White" FontWeight="Bold" Click="escolheTesoura" Margin="150,0,0,0" RenderTransformOrigin="0.511,0.536"/>
+        <TextBlock HorizontalAlignment="Left" Margin="103,297,0,0" TextWrapping="Wrap" Text="Pontos do jogador:" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="587,297,0,0" TextWrapping="Wrap" Text="Pontos do Bot:" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Center" Height="20" Margin="0,272,0,0" TextWrapping="Wrap" Text="Vencedor é:" VerticalAlignment="Top" Width="68" FontWeight="Bold"/>
+        <TextBlock x:Name="txtVencedor" HorizontalAlignment="Center" Margin="0,297,0,0" TextWrapping="Wrap" Text="&lt;Vencedor: Null&gt;" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBlock x:Name="txtVitoriasJogador" HorizontalAlignment="Left" Margin="219,297,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBlock x:Name="txtVitoriasBot" HorizontalAlignment="Left" Margin="678,297,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" FontWeight="Bold"/>
+
+    </Grid>
+</Window>

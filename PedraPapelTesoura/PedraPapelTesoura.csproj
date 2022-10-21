@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="1024px-Pokémon_Water_Type_Icon.svg.png" />
+    <None Remove="1200px-Pokémon_Grass_Type_Icon.svg.png" />
+    <None Remove="greater-than-sign-icon-30.png" />
+    <None Remove="image_preview.png" />
+    <None Remove="img60e3845f02a967.webp" />
+    <None Remove="note.png" />
+    <None Remove="Pokémon_Fire_Type_Icon.svg.png" />
+    <None Remove="scissor.png" />
+    <None Remove="Seta-Curva-PNG.png" />
+    <None Remove="stone.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="1024px-Pokémon_Water_Type_Icon.svg.png" />
+    <Resource Include="1200px-Pokémon_Grass_Type_Icon.svg.png" />
+    <Resource Include="greater-than-sign-icon-30.png" />
+    <Resource Include="image_preview.png" />
+    <Resource Include="img60e3845f02a967.webp" />
+    <Resource Include="note.png" />
+    <Resource Include="Pokémon_Fire_Type_Icon.svg.png" />
+    <Resource Include="scissor.png" />
+    <Resource Include="Seta-Curva-PNG.png" />
+    <Resource Include="stone.png" />
+  </ItemGroup>
+
+</Project>
